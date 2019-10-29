@@ -1,0 +1,141 @@
+html,
+body,
+div,
+img {
+    margin: 0;
+    padding: 0;
+    color: #ebebeb;
+    background-color: #2B2B2B;
+    border: 0;
+    font-size: 100%;
+    font-family: sans-serif;
+    vertical-align: bottom;
+    text-align: center;
+    
+
+}
+
+.imgContainer {
+    position: relative;
+    object-fit: contain;
+    text-align: center;
+}
+
+.imgContainer p {
+    position: absolute;
+    width: 100%;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    bottom: 0px;
+    left: 0px;
+    color: #ebebeb;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: left;
+    visibility: hidden;
+}
+
+.imgContainer:hover>p {
+    visibility: visible;
+}
+
+.imgContainer img {
+    height: 100%;
+    width: 100%;
+}
+
+.divider {
+    margin: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ebebeb;
+    background-color: rgb(43, 43, 43);
+    font-size: 20px;
+}
+
+input {
+    width: 50%;
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ebebeb;
+    font-size: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 5px;
+    color: black;
+    background-color: #ebebeb;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* adding responsiveness while still filling 100% of the containers width */
+@media (min-width: 320px) {
+    .pages {
+        -webkit-column-count: 2;
+        -webkit-column-gap: 0px;
+
+        -moz-column-count: 2;
+        -moz-column-gap: 0px;
+
+        column-count: 2;
+        column-gap: 0px;
+    }
+    input {
+        width: 50%;
+    }
+
+ 
+}
+
+@media (min-width: 768px) {
+    .pages {
+        -webkit-column-count: 3;
+        -webkit-column-gap: 0px;
+
+        -moz-column-count: 3;
+        -moz-column-gap: 0px;
+
+        column-count: 3;
+        column-gap: 0px;
+    }
+    input {
+        width: 30%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .pages {
+        -webkit-column-count: 4;
+        -webkit-column-gap: 0px;
+
+        -moz-column-count: 4;
+        -moz-column-gap: 0px;
+
+        column-count: 4;
+        column-gap: 0px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .pages {
+        -webkit-column-count: 5;
+        -webkit-column-gap: 0px;
+
+        -moz-column-count: 5;
+        -moz-column-gap: 0px;
+
+        column-count: 5;
+        column-gap: 0px;
+    }
+
+}
